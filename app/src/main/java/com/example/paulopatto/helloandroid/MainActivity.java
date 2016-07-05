@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void surpreenderUsaurio(View v) {
-        Editable texto = this.nameEditText.getText();
-        this.saudacaoTextView.setText(texto);
+        Editable nome = this.nameEditText.getText();
+        String message = saudacao + " " + nome + "!";
+        this.saudacaoTextView.setText(message);
     }
 }

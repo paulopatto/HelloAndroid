@@ -25,5 +25,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnSaudacao"
         android:layout_gravity="center"
-        android:text="@string/surpreenda_me"/>
+        android:text="@string/surpreenda_me"
+        android:onClick="surpreenderUsuario"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saudacaoTextView"/>
 </LinearLayout>

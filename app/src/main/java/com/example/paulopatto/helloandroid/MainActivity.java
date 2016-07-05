@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
         /// Obter referencias aos componentes da view
 
-        this.nameEditText = findViewById(R.id.nameEditText);
-        this.saudacaoTextView = findViewById(R.id.saudacaoTextView);
+        this.nameEditText = (EditText) findViewById(R.id.nameEditText);
+        this.saudacaoTextView = (TextView) findViewById(R.id.saudacaoTextView);
         this.saudacao = getResources().getString(R.string.saudacao);
     }
 
-    public void surpreenderUsaurio(View v) {
+    public void surpreenderUsuario(View v) {
         Editable nome = this.nameEditText.getText();
         String message = saudacao + " " + nome + "!";
         this.saudacaoTextView.setText(message);
